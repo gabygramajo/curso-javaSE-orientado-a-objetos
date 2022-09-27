@@ -1,2 +1,11 @@
-package PACKAGE_NAME;public class Main {
+import static ui.UIMenu.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Doctor myDoctor = new Doctor("Anahí Salgado", "Pediatría");
+
+        showMenu();
+
+    }
 }
