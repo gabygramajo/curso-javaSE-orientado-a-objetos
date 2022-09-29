@@ -17,13 +17,11 @@ public class Main {
 
         Patient patient = new Patient("Alejandra", "alejandra@email.com");
         patient.setWeight(54.6);
-//        System.out.println(patient.getWeight());;
+//        System.out.println(patient.getWeight());
         patient.setHeight(1.65);
-//        System.out.println(patient.getHeight());;
+//        System.out.println(patient.getHeight());
         patient.setPhoneNumber("12344327");
 //        System.out.println(patient.getPhoneNumber());
-        for ( DayOfTheWeek day : DayOfTheWeek.values() ){
-            System.out.println(day.getDayInSpanish());
-        }
+
     }
 }
