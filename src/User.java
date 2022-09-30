@@ -53,4 +53,14 @@ public class User {
         }
         this.phoneNumber = phoneNumber;
     }
+
+    @Override // esta anotación indica que este método no es propio de la clase User.
+    public String toString() {
+        return "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ' ';
+    }
 }

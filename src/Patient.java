@@ -8,6 +8,18 @@ public class Patient extends User {
         super(name, email);
     }
 
+    @Override
+    public String toString() {
+
+        return "Patient{" +
+                "birthday='" + birthday + '\'' +
+                ", blood='" + blood + '\'' +
+                ", weight=" + getWeight() +
+                ", height=" + getHeight() +
+                super.toString() +
+                '}';
+    }
+
     public String getBirthday() {
         return birthday;
     }

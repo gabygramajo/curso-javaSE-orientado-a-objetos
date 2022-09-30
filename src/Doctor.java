@@ -4,8 +4,9 @@ import java.util.Date;
 public class Doctor extends User {
     private String speciality;
 
-    Doctor(String name, String email) {
+    Doctor(String name, String email, String speciality) {
         super(name, email);
+        this.speciality = speciality;
     }
 
 
@@ -58,5 +59,19 @@ public class Doctor extends User {
         public void setTime(String time) {
             this.time = time;
         }
+
+        @Override
+        public String toString() {
+            return "\nDate = " + date +
+                    ", Time = '" + time;
+        }
+    }
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                super.toString() +
+                "speciality='" + speciality +
+                ", available Appointments" + availableAppointments +
+                '}';
     }
 }
