@@ -1,10 +1,12 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Doctor extends User {
     private String speciality;
 
-    Doctor(String name, String email, String speciality) {
+    public Doctor(String name, String email, String speciality) {
         super(name, email);
         this.speciality = speciality;
     }
@@ -68,7 +70,7 @@ public class Doctor extends User {
     }
     @Override
     public String toString() {
-        return "Doctor{" +
+        return "model.Doctor{" +
                 super.toString() +
                 "speciality='" + speciality +
                 ", available Appointments" + availableAppointments +

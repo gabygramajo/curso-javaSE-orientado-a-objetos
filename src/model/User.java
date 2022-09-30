@@ -1,3 +1,5 @@
+package model;
+
 public class User {
     private int id;
     private String name;
@@ -54,7 +56,7 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    @Override // esta anotación indica que este método no es propio de la clase User.
+    @Override // esta anotación indica que este método no es propio de la clase model.User.
     public String toString() {
         return "id=" + id +
                 ", name='" + name + '\'' +

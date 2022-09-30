@@ -1,17 +1,19 @@
+package model;
+
 public class Patient extends User {
     private String birthday;
     private String blood;
     private double weight;
     private double height;
 
-    Patient(String name, String email) {
+    public Patient(String name, String email) {
         super(name, email);
     }
 
     @Override
     public String toString() {
 
-        return "Patient{" +
+        return "model.Patient{" +
                 "birthday='" + birthday + '\'' +
                 ", blood='" + blood + '\'' +
                 ", weight=" + getWeight() +
