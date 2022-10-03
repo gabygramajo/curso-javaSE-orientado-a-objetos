@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Doctor extends User {
+
     private String speciality;
 
     public Doctor(String name, String email, String speciality) {
@@ -68,6 +69,15 @@ public class Doctor extends User {
                     ", Time = '" + time;
         }
     }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+
     @Override
     public String toString() {
         return "model.Doctor{" +
