@@ -1,4 +1,6 @@
-public enum DayOfTheWeek {
+package otherConcepts;
+
+public enum Enumerations {
     MONDAY("Lunes", 1),
     TUESDAY("Martes", 2),
     WEDNESDAY("Miercoles", 3),
@@ -9,7 +11,8 @@ public enum DayOfTheWeek {
 
     private final String day; // Debe ser constante para que no pueda ser modificada de otra clase.
     private  final int indexOfTheDay;
-    private DayOfTheWeek(String dayInSpanish, int index) { // Constructor
+
+    private Enumerations(String dayInSpanish, int index) { // Constructor
         day = dayInSpanish;
         indexOfTheDay = index;
     }
