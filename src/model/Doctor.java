@@ -86,4 +86,10 @@ public class Doctor extends User {
                 ", available Appointments" + availableAppointments +
                 '}';
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Cruz Roja");
+        System.out.println("Departamento: Oncología");
+    }
 }

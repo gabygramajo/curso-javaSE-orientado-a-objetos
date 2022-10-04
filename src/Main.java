@@ -1,5 +1,6 @@
 import model.Doctor;
 import model.Patient;
+import model.User;
 
 import java.util.Date;
 
@@ -25,5 +26,18 @@ public class Main {
 //        System.out.println(patient.getPhoneNumber());
         System.out.println(myDoctor);
 
+        User userDoc = new Doctor("Lautaro", "lt@email.com", "Oncologia");
+        User userPat = new Patient("Rocardo", "Ricardo@email.com");
+
+        userDoc.showDataUser();
+        userPat.showDataUser();
+
+        User userAnonymous = new User("Undefined","Undefined") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Soy una persona anónima 8)...");
+            }
+        };
+        userAnonymous.showDataUser();
     }
 }
